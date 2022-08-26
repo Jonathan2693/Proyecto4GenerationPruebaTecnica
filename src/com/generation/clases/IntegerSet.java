@@ -70,9 +70,13 @@ public class IntegerSet {
 	 */
 	public String toSetString() {
 		String cadena = "Matriz = ";
+		
 		for(int i=0 ; i<this.matriz.length ; i++) {
 			String caracter = (this.matriz[i]==true) ? String.valueOf(i).concat(" ") : "";
 			cadena += caracter;
+		}
+		if(cadena.length()<10) {	//Si no se concateno ningun caracter, el conjunto esta vacio
+			return "-";
 		}
 		return cadena;
 	}

@@ -63,6 +63,10 @@ class IntegerSetTests {
 		//Test para equalTo
 		assertTrue(matriz1.equalTo(matriz1));
 		assertFalse(matriz1.equalTo(matriz2));
+		
+		//Se crea una nueva matriz vacia y se espera un -
+		IntegerSet matrizVacia = new IntegerSet();
+		assertEquals("-", matrizVacia.toSetString());
 	}
 
 }

@@ -59,7 +59,13 @@ public class Main {
 		System.out.println("Comparacion de matriz consigo misma");
 		System.out.println("Las matrices son iguales? = " + matriz1.equalTo(matriz1));
 		
-
+		//Se eliminan todos los numeros de la matriz, y se muestra un - por ser arreglo vacio
+		matriz2.deleteElement(0);
+		matriz2.deleteElement(27);
+		matriz2.deleteElement(32);
+		matriz2.deleteElement(74);
+		matriz2.deleteElement(99);
+		System.out.println("Arreglo vacio = " + matriz2.toSetString());
 	}
 
 }
